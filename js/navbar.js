@@ -1,19 +1,14 @@
-//Click the hamburger menu to see the animation
-//You can click the X to close or click anywhere outside the menu
+$(function() {
+    $('body').addClass('js');
 
-$(document).ready(function(){
-	$('.hamburger-shell').click(function(){
-		$('#menu').slideToggle(300);
-		$('.top').toggleClass('rotate');
-		$('.middle').toggleClass('rotate-back');
-		$('.menu-name').toggleClass('bump');
-		$('.bg-cover').toggleClass('reveal');
-	});
-	$('.bg-cover').click(function(){
-		$('#menu').slideToggle(300);
-		$('.top').toggleClass('rotate');
-		$('.middle').toggleClass('rotate-back');
-		$('.menu-name').toggleClass('bump');
-		$('.bg-cover').toggleClass('reveal');
-	})
+    var $hamburger = $('.hamburger'),
+        $nav = $('#site-nav'),
+        $masthead = $('#masthead');
+
+    $hamburger.click(function() {
+      $(this).toggleClass('is-active');
+      $nav.toggleClass('is-active');
+      $masthead.toggleClass('is-active');
+      return false;
+    })
 });
