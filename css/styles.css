@@ -18,7 +18,7 @@ body {
 
 #nametag {
 	font-family: 'Ribeye Marrow', cursive;
-	font-size: 28px;
+	font-size: 6vw;
 	color: #fff;
 	margin-top: 160px;
 }
@@ -26,22 +26,19 @@ body {
 
 
 #nametag-info {
-	font-size: 15px;
+	font-size: 3vw;
 	color: #fff;
 	font-family: 'Architects Daughter', cursive;
 	/*margin-top: 100px;*/
 }
 
-
-@media screen and (min-width: 960px) {
-	#nametag {
-		font-size: 80px;
-	}
-
-	#nametag-info {
-		font-size: 35px;
-	}
+@media (min-width: 920px) {
+    #nametag {
+        max-width: 75%;
+    }
 }
+
+
 
 /*NAVBAR STYLES*/
 .navbar-default {
