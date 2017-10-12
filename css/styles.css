@@ -44,6 +44,9 @@ body {
 .navbar-default {
   background-color: #2076c7;
   border-color: #a3a1ae;
+	position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 .navbar-default .navbar-brand {
   color: #ecf2f4;
