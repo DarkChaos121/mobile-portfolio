@@ -491,3 +491,33 @@ https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/
 ========================================================
 /*----------COVER STYLES includes HEADER STYLES-------*/
 ========================================================
+
+
+.hero-h1 {
+	font-size: 73px;
+	width: 100vw;
+}
+.hero-text h1:before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+		top: 67px;
+		left: -70%;
+}
+
+.hero-text h1:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 66px;
+}
+
+.hero-h2 {
+	font-size: 32px;
+  text-transform: lowercase;
+  font-family: "Open Sans";
+}
